@@ -24,7 +24,7 @@ params:
   description: "A dev's little corner of the internet"
   keywords: [Blog, Portfolio]
   author: "Rey Williams"
-  images: ["./assets/wide-angle-flat-mono.png"]
+  images: ["/images/wide-angle-flat-mono.png"]
 
   DateFormat: "January 2, 2006"
   defaultTheme: dark
