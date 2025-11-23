@@ -64,7 +64,7 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://github.com/reywilliams/blog/tree/blog-reywilliams/content"
+    URL: "https://github.com/reywilliams/blog/tree/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 
