@@ -4,7 +4,10 @@ layout: "about"
 placeholder: "Search my little corner with full text fuzzy search"
 description: "> Just a passionate dev trying to build cool things"
 ---
+
 > A more **_in-depth_** write-up can be found on my [GitHub](https://github.com/reywilliams)
+
+> All views/opinions are my own and do not reflect my employer nor their investors.
 
 ```bash
 ❯ whoami
@@ -26,4 +29,3 @@ Proxmox server hosting K8s, DNS, Tailscale.
 - Learning about geopolitics on Ground News
 ... (ill time out eventually lol)
 ```
-
