@@ -18,6 +18,8 @@ outputs:
     - RSS
     - JSON
 
+enableEmoji: true
+
 params:
   env: production
   title: Rey's Corner
