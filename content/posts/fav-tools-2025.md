@@ -1,10 +1,10 @@
 ---
-title: “My Favorite Tools (2025)”
+title: "My Favorite Tools (2025)"
 date: "2025-12-30T18:28:22-08:00"
-tags: [“tooling”, “lists”]
-author: “Rey Williams”
-description: “A quick rundown of tools I enjoyed using in 2025.”
-summary: “A quick rundown of tools I enjoyed using in 2025.”
+tags: ["tooling", "lists"]
+author: "Rey Williams"
+description: "A quick rundown of tools I enjoyed using in 2025."
+summary: "A quick rundown of tools I enjoyed using in 2025."
 ---
 
 With 2025 wrapping up, I thought it would be fun to reflect on the tools I’ve enjoyed using this year. As a dev, these tools are a part of my daily workflows and make me _[some x %]_ better.
@@ -17,7 +17,7 @@ I am **very big** on notes (_and markdown_). I sometimes find that my mind moves
 
 I use Obsidian in both professional and personal settings, and I find its minimal yet feature-rich environment ideal for my use cases. I do have small gripes with it like [GraphQL syntax highlighting not rendering in the source editor due to it using a different library from the live preview editor](https://forum.obsidian.md/t/bug-of-syntax-highlighting-for-graphql-language-in-source-code-and-live-preview-mode/45110), but overall I enjoy the experience.
 
-I don’t think I am a power user by any means, but I feel very productive with Obsidian and have patterns, templates, and such that work well for me in there. I can safely attribute at least 30% (:laughing:) of my professional success to Obsidian this year - I’ve technically scoped lots of epics, fixed a lot of hair-pulling bugs, and clearly documented lots of complex ideas in Obsidian. Next up on the docket is maybe using the [Obsidian MCP](https://hub.docker.com/r/mcp/obsidian), but I’ve tried to keep AI out of my notes as much as I can, as it’s sorta my “outlet” haha.
+I don’t think I am a power user by any means, but I feel very productive with Obsidian and have patterns, templates, and such that work well for me in there. I can safely attribute at least 30% (:laughing:) of my professional success to Obsidian this year - I’ve technically scoped lots of epics, fixed a lot of hair-pulling bugs, and clearly documented lots of complex ideas in Obsidian. Next up on the docket is maybe using the [Obsidian MCP](https://hub.docker.com/r/mcp/obsidian), but I’ve tried to keep AI out of my notes as much as I can, as it’s sorta my "outlet" haha.
 
 ## 2. [DataGrip](https://www.jetbrains.com/datagrip/)
 
@@ -32,7 +32,7 @@ Some additional context about my use case: I use DataGrip professionally to:
 A few things I’ve enjoyed in particular are:
 
 - The data sources setup gives you lots of control and QOL settings for session management. A simple one I’ve enjoyed is [read-only mode](https://www.jetbrains.com/datagrip/features/executing.html#:~:text=how%20it%20works.-,Read%2Donly%20mode,-Read%2DOnly%20can).
-- [^1] "Smart code completion, code inspections, on-the-fly error highlighting, quick-fixes, and refactoring capabilities. It saves you time by making the process of writing SQL code more efficient.”
+- [^1] "Smart code completion, code inspections, on-the-fly error highlighting, quick-fixes, and refactoring capabilities. It saves you time by making the process of writing SQL code more efficient."
 - Quick expression evaluation
 - The import/export options - I love any tool that supports markdown, haha.
 - Easy navigation - I enjoy having a very clear separation between different DBs by using separate projects, colors, etc.
@@ -48,7 +48,7 @@ Before Ghostty, I was an iTerm user, and it was fine, but Ghostty feels lightwei
 
 I am currently using the [tip (nightly) release](https://mitchellh.com/writing/ghostty-non-profit) as I was really excited for find/search scrollback to be released, and it won’t be in a stable release until early 2026, I believe.
 
-While Ghostty and its performance speaks for itself, I am also a big “fan” of Mitchell and find what he’s doing with Ghostty and has done with all of the HashiCorp product suite incredibly impressive.
+While Ghostty and its performance speaks for itself, I am also a big "fan" of Mitchell and find what he’s doing with Ghostty and has done with all of the HashiCorp product suite incredibly impressive.
 
 ## 4. Tailscale
 
