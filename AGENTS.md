@@ -20,3 +20,7 @@ before changing its structure; read docs/development.md for checks/deployment.
 
 - Use Conventional Commit messages and PR titles (for example feat(blog): ...).
   Keep review comments concrete and focused on actionable findings.
+- Write PR bodies with What/Why/How sections, short prose, and clear bullets.
+  Define outcomes and visible UX behavior explicitly. For UI changes, attach
+  matching before/after screenshots to the PR body with gh pr edit --attach.
+  Keep screenshot files out of commits and private machine details out of images.
