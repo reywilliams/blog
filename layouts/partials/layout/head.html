@@ -1,0 +1,19 @@
+{{ $description := .Description | default site.Params.description }}
+{{ $css := slice (resources.Get "css/tokens.css") (resources.Get "css/base.css") (resources.Get "css/layout.css") (resources.Get "css/writing.css") (resources.Get "css/article.css") (resources.Get "css/prose.css") (resources.Get "css/pages.css") (resources.Get "css/search.css") (resources.Get "css/syntax.css") (resources.Get "css/responsive.css") | resources.Concat "css/corner.css" | minify | fingerprint }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="theme-color" content="{{ site.Params.themeColor }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="preload" href="{{ "fonts/geist.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{ range .AlternativeOutputFormats }}
+<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ .Name }}">
+{{ end }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if eq .Section "posts" }}article{{ else }}website{{ end }}">
+<meta property="og:image" content="{{ site.Params.socialImage | absURL }}">

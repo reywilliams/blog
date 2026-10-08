@@ -1,7 +1,5 @@
 ---
 title: "$ whoami"
-layout: "about"
-placeholder: "Search my little corner with full text fuzzy search"
 description: "> Just a passionate dev trying to build cool things"
 ---
 

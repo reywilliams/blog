@@ -1,0 +1,5 @@
+{{ define "main" }}
+  {{ partial "page/heading.html" . }}
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ partial "writing/list.html" (dict "pages" .RegularPages.ByDate.Reverse "headingLevel" 2) }}
+{{ end }}

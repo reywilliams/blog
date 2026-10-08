@@ -1,0 +1,68 @@
+/* Responsive overrides, applied after component styles */
+@media (min-width: 1024px) {
+  .shell {
+    padding-inline: 48px;
+  }
+  .hero {
+    margin-top: 16px;
+  }
+  .section-heading h2 {
+    width: 144px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 600px) {
+  .shell {
+    padding-inline: 20px;
+  }
+  .nav {
+    gap: 8px;
+    font-size: 12px;
+  }
+  .nav nav {
+    gap: 12px;
+  }
+  .nav > a span {
+    display: none;
+  }
+  .hero {
+    margin-bottom: 24px;
+  }
+  .section-heading {
+    display: block;
+  }
+  .section-heading > span {
+    display: block;
+    margin-top: 8px;
+  }
+  .writing-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 24px 0;
+  }
+  .writing-list time {
+    font-size: 12px;
+  }
+  .footer {
+    margin-top: 56px;
+    gap: 16px;
+    font-size: 12px;
+  }
+  .footer > nav {
+    gap: 16px;
+  }
+  .article {
+    margin-top: 24px;
+  }
+  .article-header {
+    margin-top: 24px;
+  }
+  .post-nav {
+    gap: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

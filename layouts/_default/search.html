@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ partial "page/heading.html" . }}
+  <label for="query" class="label">Search writing</label>
+  <input id="query" type="search" placeholder="{{ .Params.placeholder }}"
+    autocomplete="off" data-index="{{ "index.json" | relURL }}">
+  <p id="search-status" role="status">Loading search…</p>
+  <ul id="results" class="search-results"></ul>
+  <noscript>Enable JavaScript to search, or browse the <a href="{{ "archive/" | relURL }}">archive</a>.</noscript>
+  {{ $script := resources.Get "js/search.js" | minify | fingerprint }}
+  <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end }}

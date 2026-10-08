@@ -1,0 +1,9 @@
+{{/* Hugo resolves pageRef entries already; only unresolved paths need relURL. */}}
+{{ $url := . }}
+{{ $basePath := (urls.Parse site.BaseURL).Path }}
+{{ if eq $url "/" }}
+  {{ $url = site.Home.RelPermalink }}
+{{ else if and (not (urls.Parse $url).IsAbs) (not (and (strings.HasPrefix $url "/") (strings.HasPrefix $url $basePath))) }}
+  {{ $url = strings.TrimPrefix "/" $url | relURL }}
+{{ end }}
+{{ return $url }}

@@ -1,0 +1,4 @@
+<header class="nav">
+  <a href="{{ site.Params.personalSite }}">{{ site.Params.author }} <span aria-hidden="true">↗</span></a>
+  {{ partial "navigation/menu.html" (dict "page" . "menu" "main" "label" "Blog navigation") }}
+</header>

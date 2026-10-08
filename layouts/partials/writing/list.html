@@ -1,0 +1,6 @@
+{{ $level := .headingLevel | default 2 }}
+<ul class="writing-list">
+  {{ range .pages }}
+    {{ partial "writing/entry.html" (dict "page" . "headingLevel" $level) }}
+  {{ end }}
+</ul>

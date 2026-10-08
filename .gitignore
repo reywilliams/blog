@@ -1,2 +1,13 @@
 public/
 *.lock
+resources/
+.hugo_build.lock
+.preview/
+
+# Machine-specific notes and local environment values
+.local/
+.env
+.env.*
+
+# Python check artifacts
+__pycache__/

@@ -1,0 +1,88 @@
+/* Layout */
+.shell {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 max(24px, env(safe-area-inset-left));
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  font-size: 14px;
+}
+.nav a {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.nav a:hover,
+.nav a[aria-current] {
+  color: var(--fg);
+}
+.nav nav {
+  display: flex;
+  gap: 24px;
+}
+.nav > a {
+  white-space: nowrap;
+}
+.nav > a span {
+  margin-left: 8px;
+  color: var(--subtle);
+}
+main {
+  min-height: 65svh;
+}
+.hero {
+  position: relative;
+  padding: clamp(40px, 7vw, 88px) 0;
+  margin-bottom: 40px;
+}
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  mask-image: radial-gradient(70% 60% at 50% 50%, #000 20%, transparent 72%);
+}
+h1 {
+  font-size: clamp(30px, 3.8vw, 48px);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0;
+}
+.hero h1 {
+  position: relative;
+}
+.dot {
+  color: var(--accent);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--hairline);
+  padding: 24px 0;
+  margin-top: 88px;
+  font: 13px/28px var(--mono);
+}
+.footer a {
+  color: var(--subtle);
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+.footer a:hover {
+  color: var(--accent);
+}
+.footer > nav {
+  display: flex;
+  gap: 24px;
+}
