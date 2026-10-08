@@ -1,0 +1,8 @@
+{{ $page := .page }}
+{{ $menu := .menu }}
+<nav aria-label="{{ .label }}">
+  {{ range index site.Menus $menu }}
+    {{ $url := partial "navigation/url.html" .URL }}
+    <a href="{{ $url }}"{{ if or ($page.IsMenuCurrent $menu .) (eq $page.RelPermalink $url) }} aria-current="page"{{ end }}>{{ .Name }}</a>
+  {{ end }}
+</nav>

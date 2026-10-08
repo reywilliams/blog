@@ -1,0 +1,10 @@
+<header class="article-header">
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Section "posts" }}
+    <div class="meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+  {{ end }}
+  {{ with .Description }}<p class="dek">{{ . }}</p>{{ end }}
+</header>

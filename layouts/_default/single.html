@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article class="article">
+    <a class="back" href="{{ site.Home.RelPermalink }}">← All writing</a>
+    {{ partial "article/header.html" . }}
+    {{ if .Params.showtoc }}
+      <details class="toc"><summary>On this page</summary>{{ .TableOfContents }}</details>
+    {{ end }}
+    <div class="prose">{{ .Content }}</div>
+    {{ partial "article/tags.html" . }}
+    {{ partial "article/navigation.html" . }}
+  </article>
+{{ end }}

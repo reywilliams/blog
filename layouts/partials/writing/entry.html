@@ -1,0 +1,10 @@
+{{ $page := .page }}
+{{ $level := .headingLevel }}
+<li>
+  <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format site.Params.listDateFormat }}</time>
+  <div>
+    <h{{ $level }} class="entry-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h{{ $level }}>
+    <p>{{ $page.Description | default ($page.Summary | plainify | truncate 160) }}</p>
+    <span class="reading">{{ $page.ReadingTime }} min read</span>
+  </div>
+</li>

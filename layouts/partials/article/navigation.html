@@ -1,0 +1,6 @@
+{{ if eq .Section "posts" }}
+  <nav class="post-nav" aria-label="More writing">
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Previous</span>{{ .Title }}</a>{{ end }}
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span>Next</span>{{ .Title }}</a>{{ end }}
+  </nav>
+{{ end }}

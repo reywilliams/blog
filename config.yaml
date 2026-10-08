@@ -1,9 +1,9 @@
 baseURL: https://blog.reywilliams.com/
 languageCode: en-us
 title: ReysCorner
-theme: ["PaperMod"]
 
 enableRobotsTXT: true
+enableEmoji: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -13,90 +13,43 @@ minify:
   minifyOutput: true
 
 outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
-enableEmoji: true
+  home: [HTML, RSS, JSON]
 
 params:
-  env: production
-  title: Rey's Corner
   description: "A dev's little corner of the internet"
-  keywords: [Blog, Portfolio]
-  author: "Rey Williams"
-  images: ["/images/wide-angle-flat-mono.png"]
-
-  DateFormat: "January 2, 2006"
-  defaultTheme: dark
-  disableThemeToggle: false
-
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowWordCount: true
-
-  ShowRssButtonInSectionTermList: true # No RSS for now
-
-  UseHugoToc: true
-  disableSpecial1stPost: true
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  homeInfoParams:
-    Title: "$ echo 'Hello!' \U0001F44B"
-    Content: \> Welcome to my little corner of the internet
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/reywilliams"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/rey-williams/"
-
-  cover:
-    hidden: true
-    hiddenInList: true
-    hiddenInSingle: true
-
-  editPost:
-    URL: "https://github.com/reywilliams/blog/tree/main/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
-
-  # ref: https://www.fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10
-    keys: ["title", "permalink", "summary", "content"]
+  author: Rey Williams
+  personalSite: https://reywilliams.com/
+  socialImage: images/wide-angle-flat-mono.png
+  terrainImage: images/terrain.svg
+  themeColor: "#0a0a0a"
+  dateFormat: January 2, 2006
+  listDateFormat: Jan 02, 2006
 
 menu:
   main:
+    - name: Writing
+      url: /
+      weight: 10
     - name: Archive
-      url: archive
-      weight: 5
-    - name: Search
-      url: search/
-      weight: 10
+      pageRef: /archive
+      weight: 20
     - name: Tags
-      url: tags/
+      pageRef: /tags
+      weight: 30
+    - name: Search
+      pageRef: /search
+      weight: 40
+  footer:
+    - name: About
+      pageRef: /whoami
       weight: 10
-    - name: $ whoami
-      url: whoami
-      weight: 15
+    - name: RSS
+      url: index.xml
+      weight: 20
+    - name: GitHub
+      url: https://github.com/reywilliams
+      weight: 30
 
-pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false

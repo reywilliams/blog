@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ partial "page/heading.html" . }}
+  {{ range (where site.RegularPages "Section" "posts").GroupByDate "2006" }}
+    <section class="archive-year">
+      <h2 class="label">{{ .Key }}</h2>
+      {{ partial "writing/list.html" (dict "pages" .Pages "headingLevel" 3) }}
+    </section>
+  {{ end }}
+{{ end }}

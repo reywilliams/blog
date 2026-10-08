@@ -1,0 +1,48 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Geist, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-gutter: stable;
+}
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-size: 16px;
+  line-height: 1.75;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: #80bdff;
+}
+a:active {
+  opacity: 0.7;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+::selection {
+  background: #4da3ff4d;
+}
+
+.skip {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  transform: translateY(-150%);
+  background: var(--bg);
+  padding: 12px;
+  z-index: 10;
+}
+.skip:focus {
+  transform: none;
+}

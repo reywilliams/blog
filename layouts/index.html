@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ partial "page/hero.html" . }}
+  <section aria-labelledby="writing-label">
+    <div class="section-heading">
+      <h2 id="writing-label">Writing</h2>
+      <span>{{ .Params.introduction }}</span>
+    </div>
+    {{ partial "writing/list.html" (dict "pages" (where site.RegularPages "Section" "posts").ByDate.Reverse "headingLevel" 3) }}
+  </section>
+{{ end }}

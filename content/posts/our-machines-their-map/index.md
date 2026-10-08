@@ -31,13 +31,13 @@ Amazon has [noted](https://www.aboutamazon.com/news/devices/everything-you-need-
 
 Per this [help article](https://www.amazon.com/gp/help/customer/display.html?nodeId=GZ4VSNFMBDHLRJUK) I found, opting out of Sidewalk seems quite easy for end users - though I am unsure if opting out means your own endpoint devices would also not be able to use the Sidewalk network
 
-# Where's the Chaos?
+## Where's the Chaos?
 
 It has already been shown that these crowd-sourced geo-location systems can be misused by bad actors in _[Surveilling the Masses with Wi-Fi-Based Positioning Systems](https://arxiv.org/abs/2405.14975)_ by [Erik Rye](https://arxiv.org/search/cs?searchtype=author&query=Rye,+E) and [Dave Levin](https://arxiv.org/search/cs?searchtype=author&query=Levin,+D). In this paper, they explore how datasets like these can be misused by "merely exploiting the fact that there are relatively few dense regions of allocated MAC address space." [^2]
 
 Earlier this year, we also saw the [_nRootTag_ compromise](https://cec.gmu.edu/news/2025-02/find-my-hacker-how-apples-network-can-be-potential-tracking-tool) found by George Mason University researchers that enables stealth tracking of Bluetooth devices by making them broadcast themselves as lost AirTags to nearby Apple devices.
 
-# Closing Thoughts
+## Closing Thoughts
 
 This post simply aggregated useful bits of information I found on this topic while looking into it, and there were far more pieces of information I wanted to tie in, but at that point this would become a case study.
 

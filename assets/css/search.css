@@ -1,0 +1,17 @@
+/* Search form */
+input[type="search"] {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  font: inherit;
+  color: var(--fg);
+  background: #111;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 8px;
+}
+#search-status {
+  font-size: 14px;
+  color: var(--muted);
+}

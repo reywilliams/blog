@@ -1,0 +1,30 @@
+/* Archive, tags, and page headings */
+.page-heading {
+  padding: 48px 0;
+  margin-bottom: 16px;
+}
+.archive-year {
+  margin-bottom: 40px;
+}
+.archive-year > .label {
+  margin-bottom: 24px;
+}
+.term-list,
+.search-results {
+  padding: 0;
+  list-style: none;
+  max-width: 720px;
+}
+.term-list li,
+.search-results li {
+  border-bottom: 1px solid var(--hairline);
+  padding: 16px 0;
+}
+.term-list a {
+  display: flex;
+  justify-content: space-between;
+}
+.term-list span {
+  color: var(--subtle);
+  font-family: var(--mono);
+}

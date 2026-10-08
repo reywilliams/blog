@@ -1,0 +1,63 @@
+/* Writing */
+.section-heading {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.section-heading h2,
+.label {
+  font: 400 13px/1.75 var(--mono);
+  color: var(--subtle);
+  margin: 0;
+}
+.section-heading > span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.writing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 880px;
+}
+.writing-list li {
+  display: grid;
+  grid-template-columns: 144px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.writing-list li:first-child {
+  padding-top: 0;
+}
+.writing-list time,
+.reading,
+.meta,
+.back {
+  font: 400 13px/28px var(--mono);
+  color: var(--subtle);
+}
+.writing-list .entry-title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.writing-list .entry-title a {
+  color: var(--fg);
+}
+.writing-list .entry-title a:hover {
+  color: var(--accent);
+}
+.writing-list p {
+  color: var(--muted);
+  margin: 4px 0 8px;
+  line-height: 1.75;
+}
+.reading {
+  font-size: 12px;
+}
